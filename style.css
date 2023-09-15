@@ -1,0 +1,32 @@
+.container > img {
+  width: 160px;
+  height: 90px;
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .container > .slider-container > #input-1:checked ~ .container > #img-1,
+.container > .slider-container > #input-2:checked ~ .container > #img-2,
+.container > .slider-container > #input-3:checked ~ .container > #img-3,
+.container > .slider-container > #input-4:checked ~ .container > #img-4 {
+  display: block;
+}
+ */
+#input-1:checked ~ #img-1,
+#input-2:checked ~ #img-2,
+#input-3:checked ~ #img-3,
+#input-4:checked ~ #img-4 {
+  display: block;
+}
+.container > p {
+  display: none;
+}
+#input-1:checked ~ #text1,
+#input-2:checked ~ #text2,
+#input-3:checked ~ #text3,
+#input-4:checked ~ #text4 {
+  display: block;
+}
