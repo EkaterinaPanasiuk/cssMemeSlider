@@ -1,28 +1,12 @@
-/* .container > img {
-  width: 160px;
-  height: 90px;
-  display: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:root {
+  --color-bg: rgb(161, 196, 196);
+  --color-black: rgb(0, 0, 0);
 }
-/* .container > .slider-container > #input-1:checked ~ .container > #img-1,
-.container > .slider-container > #input-2:checked ~ .container > #img-2,
-.container > .slider-container > #input-3:checked ~ .container > #img-3,
-.container > .slider-container > #input-4:checked ~ .container > #img-4 {
-  display: block;
-}
- 
-
-#input-1:checked ~ #img-1,
-#input-2:checked ~ #img-2,
-#input-3:checked ~ #img-3,
-#input-4:checked ~ #img-4 {
-  display: block;
-  animation: imgAnime 500ms ease-in-out;
-} */
 @keyframes imgAnime {
   from {
     opacity: 0;
@@ -38,62 +22,33 @@
   max-width: 75rem;
   padding: 1em;
   margin: 0 auto;
-  background-color: aqua;
-}
-.container > p {
-  display: none;
-}
-#input-1:checked ~ #text1,
-#input-2:checked ~ #text2,
-#input-3:checked ~ #text3,
-#input-4:checked ~ #text4 {
-  display: block;
-  animation: imgAnime 500ms ease-in-out;
-}
-.tabs {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-}
-input[name="n"] {
-  display: inline-block;
-  width: 50px;
-}
-.tab {
-  height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.inputsss {
-  display: block;
-}
-.text {
-  display: none;
-  width: 50%;
+  background-color: var(--color-bg);
+  padding: 1em;
 }
 .slider-img {
-  display: block;
-  width: 40em;
-  height: 25em;
+  margin: 0;
+  height: 7rem;
+  width: 0;
+  transition: all 0.3s;
+}
+.text {
+  color: var(--color-bg);
+  line-height: 0;
+  font-size: 0;
+  transition: all 0.3s;
 }
 
-.tab > img {
-  display: none;
+#input-1:checked ~ .img-container #img-1,
+#input-2:checked ~ .img-container #img-2,
+#input-3:checked ~ .img-container #img-3,
+#input-4:checked ~ .img-container #img-4 {
+  width: 10rem;
 }
-#tab1:checked ~ #img1,
-#tab2:checked ~ #img2,
-#tab3:checked ~ #img3,
-#tab4:checked ~ #img4 {
-  display: block;
-  animation: imgAnime 300ms ease-in-out;
-}
-#tab1:checked ~ #t1,
-#tab2:checked ~ #t2,
-#tab3:checked ~ #t3,
-#tab4:checked ~ #t4 {
-  display: block;
-  animation: imgAnime 300ms ease-in-out;
+#input-1:checked ~ .text-container #text-1,
+#input-2:checked ~ .text-container #text-2,
+#input-3:checked ~ .text-container #text-3,
+#input-4:checked ~ .text-container #text-4 {
+  line-height: 2rem;
+  color: var(--color-black);
+  font-size: 1.5rem;
 }
