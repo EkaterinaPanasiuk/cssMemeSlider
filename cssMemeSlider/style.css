@@ -22,12 +22,12 @@ html {
 .container {
   width: 100vw;
   max-width: 75rem;
-  padding: 1vw;
+  padding: 2rem;
   margin: 0 auto;
   background-color: var(--color-white);
 }
 .slider {
-  width: 73rem;
+  width: 71rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -90,7 +90,7 @@ input:active + label {
   order: 9;
 }
 .img-container {
-  width: 73rem;
+  width: 71rem;
   border-radius: 1em;
   margin: 0 auto;
   order: 0;
@@ -98,7 +98,7 @@ input:active + label {
   justify-content: center;
 }
 .img-inner-container {
-  width: 73rem;
+  width: 71rem;
   border-radius: 1em;
   overflow: hidden;
   margin: 0 0 1em 0;
@@ -129,9 +129,9 @@ input:active + label {
 #input-2:checked ~ .img-container .img-inner-container #img-2,
 #input-3:checked ~ .img-container .img-inner-container #img-3,
 #input-4:checked ~ .img-container .img-inner-container #img-4 {
-  width: 73rem;
+  width: 71rem;
 
-  height: calc(73rem * 0.5625);
+  height: calc(71rem * 0.5625);
 }
 .text-container {
   order: 1;
